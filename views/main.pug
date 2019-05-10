@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Roama Cakes
+        link(rel="stylesheet", href="stylesheets/home.css")
+        link(rel="stylesheet", href="stylesheets/animate.css")
+    body
+        include navbar.pug
+
+        div.all
+            div#carouselExampleFade.carousel.slide.carousel-fade(data-ride="carousel")
+                <div id="carouselExampleFade" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleFade" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleFade" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleFade" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleFade" data-slide-to="3"></li>
+                </ol>
+                div.carousel-inner
+                    div.carousel-item.active
+                        img.d-block.w-100(src="images/9.jpg", alt="Fierst Slide", srcset="")
+                    div.carousel-item
+                        img.d-block.w-100(src="images/33.jpg", alt="Second Slide", srcset="")
+                    div.carousel-item
+                        img.d-block.w-100(src="images/38.jpg", alt="Third Slide", srcset="")
+                    div.carousel-item
+                        img.d-block.w-100(src="images/19.jpg", alt="Fourth Slide", srcset="")
+
+                a.carousel-control-prev(href="#carouselExampleFade" role="button" data-slide="prev")
+                    span.carousel-control-prev-icon(aria-hidden="true")
+                    span.sr-only Previous
+                a.carousel-control-next(href="#carouselExampleFade" role="button" data-slide="next")
+                    span.carousel-control-next-icon(aria-hidden="true")
+                    span.sr-only Next
+        
+        <div class="container feature">
+            <h1 class="display-3">Roama Cakes</h1>
+            <h1 class="display-5 text-center">...Every bite is special</h1>
+            <div class="lead">
+                p Roama Cakes is one of Nigeria’s Top Cakes and Event Management outfit.
+                p We are registered in Nigeria to provide a variety of Services which Include:
+                    <ul class="list-group table-center col-md-auto">
+                        <li class="list-group-item">All Occasion Cakes</li>
+                        <li class="list-group-item">Event/Party Venue Decorations</li>
+                        <li class="list-group-item">Catering Services</li>
+                        <li class="list-group-item">Event Management</li>
+                        <li class="list-group-item">and Many More.</li>  
+                    </ul>
+                p If you are looking for good cakes in Ibadan, great cakes in Lagos, Good Cakes in Akure, Cakes in Oshogbo and other neighboring states, look no further because Roama Cakes has got you Covered.
+            </div>
+            <a class="btn btn-danger btn-lg" href="/contacts" role="button">Contact Us</a>
+        </div>
+
+        <div class="container-fluid feature">
+            hr
+            <h3 class="display-4">Featured Works</h3>
+            hr
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/7.jpg" alt="Card image cap">
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/33.jpg" alt="Card image cap">
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/24.jpg" alt="Card image cap">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/36.jpg" alt="Card image cap">
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/2.jpg" alt="Card image cap">
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/21.jpg" alt="Card image cap">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/19.jpg" alt="Card image cap">
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/41.jpg" alt="Card image cap">
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/9.jpg" alt="Card image cap">
+                    </div>
+                </div>
+            </div>
+        </div>
+        include footer.pug
